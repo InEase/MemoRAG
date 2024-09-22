@@ -1,0 +1,41 @@
+[project]
+name = "memorag"
+version = "0.1.4"
+description = "A Python package for memory-augmented retrieval-augmented generation"
+authors = [
+    {name = "Muxuan Li", email = "InEase28@gmail.com"},
+    {name = "Tommy Chien", email = "tommy@chien.io"},
+]
+dependencies = [
+    "accelerate ",
+    "datasets ",
+    "deepspeed>=0.14.0 ",
+    "fuzzywuzzy ",
+    "jieba ",
+    "minference>=0.1.5.post1",
+    "openai",
+    "python-Levenshtein  ",
+    "rouge ",
+    "seaborn ",
+    "semantic_text_splitter",
+    "tiktoken",
+    "transformers>=4.43.1",
+    "triton==2.3.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
